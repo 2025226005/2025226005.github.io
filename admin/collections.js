@@ -25,7 +25,7 @@ export function createConfig(settings) {
     collections: [
       folder('undergraduates', '학부 연구생 · 연도별', {
         label_singular: '연도', slug: '{{fields.year}}', identifier_field: 'year', summary: '{{fields.year}}년 학부 연구생',
-        sortable_fields: ['year'], view_groups: [],
+        sortable_fields: ['year'],
         fields: [year(), members('Undergraduate Researcher')]
       }),
       { name: 'current', label: '현재 구성원', format: 'json', delete: false, editor: { preview: false }, files: [
