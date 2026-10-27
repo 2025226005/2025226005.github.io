@@ -1,0 +1,81 @@
+{
+  "members": [
+    {
+      "name": "이재혁  JaeHyuk Lee",
+      "photo": "/uploads/people/jaehyuk-lee.webp",
+      "photo_alt": "JaeHyuk Lee",
+      "role": "Post-doctoral Researcher, SSL",
+      "details": "Ph.D. Civil Engineering, Chungbuk National University (2026)\nResearcher, Korean Institute of Geoscience and Mineral Resources (2021)\nResearch Assistance, SSL (2018 - 2021)\nM.S. Civil Engineering, Chungbuk National University, 2021\nB.S. Civil Engineering, Chungbuk National University, 2020\nEmail: bksro1254@naver.com"
+    },
+    {
+      "name": "박영서  Yeongseo Park",
+      "photo": "/uploads/people/yeongseo-park.webp",
+      "photo_alt": "Yeongseo Park",
+      "role": "Research Assistance",
+      "details": "M.S. Civil Engineering, Chungbuk National University, 2025\nB.S. Civil Engineering, Chungbuk National University, 2025\nEmail: 1023syp@chungbuk.ac.kr"
+    },
+    {
+      "name": "전건열  GeonYeol Jeon",
+      "photo": "/uploads/people/geonyeol-jeon.webp",
+      "photo_alt": "GeonYeol Jeon",
+      "role": "Ph.D Student",
+      "details": "Research Assistance, SSL (2019 - 2023)\nM.S. Civil Engineering, Chungbuk National University, 2022\nB.S. Civil Engineering, Chungbuk National University, 2020\nEmail: rjsduf1111@naver.com"
+    },
+    {
+      "name": "이건희  GeonHee Lee",
+      "photo": "/uploads/people/geonhee-lee.webp",
+      "photo_alt": "GeonHee Lee",
+      "role": "Ph.D Student",
+      "details": "Research Assistance, SSL (2019 - 2022)\nM.S. Disaster Prevention Engineering, Chungbuk National University, 2022\nB.S. Civil Engineering, Chungbuk National University, 2020\nEmail: korrjdgml@daum.net"
+    },
+    {
+      "name": "원준신  Xuan Tinh Nguyen",
+      "photo": "/uploads/people/xuan-tinh-nguyen.webp",
+      "photo_alt": "Xuan Tinh Nguyen",
+      "role": "Ph.D Student, Co-supervisor: Prof. Euijong Lee (CBNU), Prof. Ji-Hoon Jeong (SKKU)",
+      "details": "M.S. Civil Engineering, Chungbuk National University, 2025\nB.S. Computer Science, Ho Chi Minh City University of Education, 2022\nEmail: xngtinh@gmail.com"
+    },
+    {
+      "name": "임팔재  Phat Tai Lam",
+      "photo": "/uploads/people/phat-tai-lam.webp",
+      "photo_alt": "Phat Tai Lam",
+      "role": "Ph.D Student, Co-supervisor: Prof. Euijong Lee (CBNU), Prof. Ji-Hoon Jeong (SKKU)",
+      "details": "M.S. Civil Engineering, Chungbuk National University, 2025\nB.S. Computer Science, Ho Chi Minh City University of Education, 2023\nEmail: lamtai2105@gmail.com"
+    },
+    {
+      "name": "쏙 쌈밧  Sok Sambath",
+      "photo": "/uploads/people/sok-sambath.webp",
+      "photo_alt": "Sok Sambath",
+      "role": "Master Student",
+      "details": "B.S. Building Technology, National University Of Laos, 2022\nEmail: sambathsok506@yahoo.com"
+    },
+    {
+      "name": "유동균  DongKyun Yoo",
+      "photo": "/uploads/people/dongkyun-yoo.webp",
+      "photo_alt": "DongKyun Yoo",
+      "role": "Master Student",
+      "details": "B.S. Digital Security, Cheongju University, 2025\nB.A International Studies - English Major, Seowon University, Mar. 2020 – Dec. 2021\nEmail: jamie6380@naver.com"
+    },
+    {
+      "name": "Minh Anh Dang",
+      "photo": "/uploads/people/minh-anh-dang.webp",
+      "photo_alt": "Minh Anh Dang",
+      "role": "Master Student",
+      "details": "B.S. Management Information Systems, Hanoi University of Science and Technology, 2023\n\nEmail: minhanh.dang0612@gmail.com"
+    },
+    {
+      "name": "Duy Hoang Anh Nguyen",
+      "photo": "/uploads/people/duy-hoang-anh-nguyen.webp",
+      "photo_alt": "Duy Hoang Anh Nguyen",
+      "role": "Master Student",
+      "details": "B.S. Civil Engineering, University of Transport and Communications, Vietnam, 2021\nEmail: ndhoanganh.research@gmail.com"
+    },
+    {
+      "name": "유정훈  Junghoon Yu",
+      "photo": "/uploads/people/junghoon-yu.webp",
+      "photo_alt": "Junghoon Yu",
+      "role": "Master Student",
+      "details": "B.S. Civil Engineering, Chungbuk National University, 2026\nEmail: civilyu01@chungbuk.ac.kr"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "CHUNGBUK NATIONAL UNIVERSITY",
+  "order": 10,
+  "members": [
+    {
+      "name": "이윤우  Yunwoo Lee",
+      "photo": "/uploads/people/alumni/yunwoo-lee.avif",
+      "photo_alt": "Yunwoo Lee",
+      "role": "Post-doctoral Researcher, SSL (2021–2025)",
+      "details": "Ph.D. Structural Engineering, Korea University, 2021\nB.S. Civil Engineering, Korea University, 2013\nEmail: leeywda@gmail.com"
+    },
+    {
+      "name": "박건  Geon Park",
+      "photo": "/uploads/people/alumni/geon-park.avif",
+      "photo_alt": "Geon Park",
+      "role": "Researcher, National Disaster Management Research Institute",
+      "details": "Post-Doctoral Researcher, SSL (2020–2021)\nB.S. Civil Engineering, Chungbuk National University, 2007\nM.S. Civil Engineering, Chungbuk National University, 2009\nPh.D. Civil Engineering, Chungbuk National University, 2018\nEmail: silvist@chungbuk.ac.kr"
+    },
+    {
+      "name": "위윤  Van VY",
+      "photo": "/uploads/people/alumni/van-vy.avif",
+      "photo_alt": "Van VY",
+      "role": "Lecturer, Ho Chi Minh City University of Education",
+      "details": "Ph.D. Civil Engineering, Chungbuk National University, 2026\nM.S. Computer Science, Ho Chi Minh City University of Education, 2018\nB.S. Computer Science Teacher Education, Ho Chi Minh City University of Education, 2010\nEmail: vivaforever84@gmail.com"
+    },
+    {
+      "name": "임장혁  Jeonghyeok Lim",
+      "photo": "/uploads/people/alumni/jeonghyeok-lim.avif",
+      "photo_alt": "Jeonghyeok Lim",
+      "role": "Research Assistance, SSL (2018–2021)",
+      "details": "B.S. Civil Engineering, Chungbuk National University, 2019\nM.S. Civil Engineering, Chungbuk National University, 2021\nEmail: Lim0827@chungbuk.ac.kr"
+    },
+    {
+      "name": "박재형  Jaehyung Park",
+      "photo": "/uploads/people/alumni/jaehyung-park.avif",
+      "photo_alt": "Jaehyung Park",
+      "role": "Research Assistance, SSL (2018–2021)",
+      "details": "B.S. Civil Engineering, Chungbuk National University, 2019\nM.S. Civil Engineering, Chungbuk National University, 2021\nEmail: pjcomputer@naver.com"
+    },
+    {
+      "name": "조문원  Munwon Cho",
+      "photo": "/uploads/people/alumni/munwon-cho.avif",
+      "photo_alt": "Munwon Cho",
+      "role": "Researcher, HydroSEM",
+      "details": "Undergraduate Researcher, SSL (2019–2021)\nB.S. Civil Engineering, Chungbuk National University, 2021\nEmail: ert8199@naver.com"
+    },
+    {
+      "name": "임유리  Yuri Lim",
+      "photo": "/uploads/people/alumni/yuri-lim.avif",
+      "photo_alt": "Yuri Lim",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2025\nEmail: limyuri0625@naver.com"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "title": "MICHIGAN TECH",
+  "order": 20,
+  "members": [
+    {
+      "name": "Sangjin Ko",
+      "photo": "/uploads/people/alumni/sangjin-ko.avif",
+      "photo_alt": "Sangjin Ko",
+      "role": "Ph.D. Student, Industrial and Systems Engineering, Virginia Tech",
+      "details": "Master of Public Policy, KDI School of Public Policy and Management, South Korea, 2016\nB.S. Electronic Engineering, Inha University, South Korea, 2010\nEmail: sangjink@mtu.edu"
+    },
+    {
+      "name": "Arman Tatar",
+      "photo": "/uploads/people/alumni/arman-tatar.avif",
+      "photo_alt": "Arman Tatar",
+      "role": "Ph.D. Student, Civil Engineering, Michigan Technological University",
+      "details": "M.S. Civil Engineering, Building and Housing Research Center, Tehran, Iran, 2016\nB.S. Civil Engineering, Amirkabir University, Tehran, Iran, 2013\nPhone: (906) 231-5844\nEmail: atatar@mtu.edu"
+    },
+    {
+      "name": "Venkata Naresh Malladi",
+      "photo": "/uploads/people/alumni/venkata-malladi.avif",
+      "photo_alt": "Venkata Naresh Malladi",
+      "role": "M.S. Civil Engineering, Michigan Technological University",
+      "details": "B.Tech Civil Engineering, Gitam University, Hyderabad, India, 2015\nPhone: (614) 477-0285\nEmail: malladi@mtu.edu"
+    },
+    {
+      "name": "Ankitha Pille",
+      "photo": "/uploads/people/alumni/ankitha-pille.avif",
+      "photo_alt": "Ankitha Pille",
+      "role": "M.S. Computer Science, Michigan Technological University",
+      "details": "M.S. Computer Science, Assam University, Assam, India, 2012\nB.S. Computer Science, Assam University, Assam, India, 2010\nPhone: (906) 275-9885\nEmail: apille@mtu.edu"
+    }
+  ]
+}
