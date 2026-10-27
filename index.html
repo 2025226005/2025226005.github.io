@@ -2,13 +2,61 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh"
-        content="0; url=https://charismatic-teammates-201473.framer.app/">
-  <title>SSAI 홈페이지로 이동</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SSAIL — Smart Structural AI Lab</title>
+  <meta name="description" content="Smart Structural AI Lab at Korea University">
+  <link rel="stylesheet" href="site.css">
+  <script defer src="site.js"></script>
 </head>
 <body>
-  <a href="https://charismatic-teammates-201473.framer.app/">
-    홈페이지로 이동하기
-  </a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="SSAIL Home"><span class="brand-mark">ai</span><span class="brand-name">SSAIL</span><span class="brand-subtitle">SMART STRUCTURAL AI LAB</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="research.html">Research</a><a href="teaching.html">Teaching</a><a href="people.html">People</a><a href="publications.html">Publications</a><a href="news.html">News</a><a href="contact.html">Contact</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-base" src="uploads/hero-bridge.webp" alt="Bridge inspection">
+      <div class="hero-shade"></div>
+      <img class="hero-lens" src="uploads/hero-bridge.webp" alt="" aria-hidden="true">
+      <div class="hero-grid" aria-hidden="true"></div><div class="hero-ring" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">KOREA UNIVERSITY · CIVIL ENGINEERING</p>
+        <h1>Structural AI Lab</h1>
+        <p class="hero-copy">We develop AI, computer vision, and drone-based technologies for the maintenance and health monitoring of civil infrastructure.</p>
+        <p class="hero-ko">AI · 컴퓨터 비전 · 드론 기술을 활용한 토목구조물 유지관리 연구실</p>
+        <div class="hero-actions"><a class="button button-primary" href="#research">Our Research&nbsp; →</a><a class="button" href="contact.html">Join Us</a></div>
+      </div>
+    </section>
+
+    <section id="research" class="research-areas">
+      <div class="container">
+        <p class="eyebrow">RESEARCH AREAS</p>
+        <div class="area-grid">
+          <article class="area-card"><h3>Structural Health Monitoring</h3><p>Sensing and monitoring of civil structures</p></article>
+          <article class="area-card"><h3>Vision-based Damage Detection</h3><p>Deep learning for crack and defect detection</p></article>
+          <article class="area-card"><h3>AI-driven Maintenance</h3><p>Data-driven asset management of infrastructure</p></article>
+          <article class="area-card"><h3>Digital Twin</h3><p>Virtual replicas of structures for prediction</p></article>
+          <article class="area-card"><h3>UAV Inspection</h3><p>Drone-based inspection of facilities</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest">
+      <div class="container">
+        <div class="latest-head"><p class="eyebrow">LATEST NEWS</p><a href="news.html">View all news</a></div>
+        <div class="news-preview-grid">
+          <article class="news-preview"><time>Sept 25, 2025</time><h3>KSMI 2025 - Best Paper Award</h3><p>Jaehyuk Lee received Best Paper Award in 2025 KSMI (한국구조물진단유지관리공학회) Conference.</p></article>
+          <article class="news-preview"><time>July, 2025</time><h3>Prof. Hyungchul Yoon received CBNU Researcher of the Month Award (July 2025).</h3><p>Click here for more information (동양일보)</p></article>
+          <article class="news-preview"><time>July 01, 2025</time><h3>Paper Published in Automation in Construction</h3><p>“Automated Digital Transformation for Pedestrian Suspension Bridges Using Hybrid Semantic Structure from Motion” was published.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><span>© 2026 SAIL — Structural AI Lab, Korea University</span><span>Seoul, Republic of Korea</span></div></footer>
 </body>
 </html>

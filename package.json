@@ -1,0 +1,18 @@
+{
+  "name": "ssail-github-pages",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "test": "node --test tools/cms.test.mjs tools/token-backend.test.mjs oauth-worker/worker.test.mjs",
+    "check:migration": "node tools/migration-check.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "devDependencies": {
+    "linkedom": "0.18.14",
+    "marked": "18.1.1",
+    "sanitize-html": "2.18.1",
+    "turndown": "7.2.4",
+    "yaml": "2.9.1"
+  }
+}

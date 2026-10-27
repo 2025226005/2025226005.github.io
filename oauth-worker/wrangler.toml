@@ -1,0 +1,14 @@
+name = "ssail-cms-auth"
+main = "worker.mjs"
+compatibility_date = "2026-10-26"
+workers_dev = true
+
+[vars]
+# Replace these two placeholders after creating your Worker and GitHub OAuth App.
+PUBLIC_URL = "https://ssail-cms-auth.YOUR-SUBDOMAIN.workers.dev"
+GITHUB_CLIENT_ID = "REPLACE_WITH_OAUTH_CLIENT_ID"
+GITHUB_REPO = "2025226005/2025226005.github.io"
+ALLOWED_ORIGINS = "https://ssail.korea.ac.kr,https://2025226005.github.io"
+
+# Set GITHUB_CLIENT_SECRET and COOKIE_SECRET using Cloudflare encrypted secrets.
+# Never put them here, in admin/config.json, or in a GitHub commit.

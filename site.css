@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+:root {
+  --ink: #1e1b22;
+  --text: #5f5963;
+  --muted: #89828d;
+  --line: #e2dfe3;
+  --paper: #fbfbfb;
+  --panel: #fff;
+  --header: #17131a;
+  --accent: #a3283c;
+  --accent-bright: #d8465d;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { display: flex; min-width: 320px; min-height: 100vh; flex-direction: column; margin: 0; overflow-x: hidden; background: var(--paper); color: var(--ink); font-family: "Noto Sans KR", sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+img, iframe, svg { display: block; max-width: 100%; }
+button { font: inherit; }
+
+.site-header { position: sticky; top: 0; z-index: 100; height: 64px; border-bottom: 1px solid #2a2530; background: rgba(23, 19, 26, .985); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; width: min(1050px, calc(100% - 40px)); height: 100%; margin: 0 auto; }
+.brand { display: flex; align-items: center; gap: 9px; color: #fff; }
+.brand-mark { display: grid; width: 30px; height: 30px; place-items: center; border-radius: 8px; background: var(--accent-bright); color: #17131a; font: 700 16px/1 "Chakra Petch", sans-serif; letter-spacing: -2px; }
+.brand-name { font: 700 21px/1 "Chakra Petch", sans-serif; letter-spacing: .2px; }
+.brand-subtitle { color: #817987; font: 600 10px/1 "Chakra Petch", sans-serif; letter-spacing: 1.7px; }
+.site-nav { display: flex; align-items: center; gap: 27px; }
+.site-nav a { color: #d2ccd5; font: 500 14px/1 "Chakra Petch", sans-serif; transition: color .15s ease; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--accent-bright); }
+.nav-dropdown { position: relative; display: flex; height: 64px; align-items: center; }
+.nav-dropdown-menu { position: absolute; top: 63px; left: -18px; width: 238px; padding: 8px 0; border: 1px solid var(--line); border-radius: 3px; background: #fff; box-shadow: 0 12px 30px rgba(24, 18, 27, .16); opacity: 0; visibility: hidden; transform: translateY(-5px); transition: opacity .14s ease, transform .14s ease, visibility .14s; }
+.nav-dropdown-menu a { display: block; padding: 11px 15px; color: #c2bbc8; font: 700 12px/1.25 "Noto Sans KR", sans-serif; white-space: nowrap; }
+.nav-dropdown-menu a:hover, .nav-dropdown-menu a:focus-visible, .nav-dropdown-menu a[aria-current="page"] { color: var(--accent-bright); background: #faf7f8; }
+.nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown:focus-within .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+.nav-toggle { display: none; padding: 7px 10px; border: 1px solid #574f5c; border-radius: 5px; background: transparent; color: #fff; cursor: pointer; }
+
+.container { width: min(1050px, calc(100% - 40px)); margin: 0 auto; flex: 1; }
+.page-intro { padding: 62px 0 48px; }
+.eyebrow { margin: 0 0 10px; color: var(--accent); font: 600 13px/1.4 "Chakra Petch", sans-serif; letter-spacing: 3px; }
+.page-title { margin: 0; font: 700 clamp(38px, 5vw, 44px)/1.1 "Chakra Petch", sans-serif; letter-spacing: -.5px; }
+.page-description { max-width: 560px; margin: 13px 0 0; color: var(--text); font-size: 16px; line-height: 1.72; }
+.page-content { padding-bottom: 90px; }
+.panel { border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+.section-heading { max-width: 850px; margin: 20px auto 28px; padding-top: 20px; border-top: 2px solid var(--accent); text-align: center; font: 400 clamp(23px, 3vw, 28px)/1.25 "Chakra Petch", sans-serif; }
+.site-footer { margin-top: 80px; background: var(--header); color: #8e8793; font-size: 13px; }
+.footer-inner { display: flex; justify-content: space-between; gap: 20px; width: min(1100px, calc(100% - 40px)); margin: 0 auto; padding: 31px 0; }
+
+/* Home */
+.hero { position: relative; min-height: 520px; overflow: hidden; background: var(--header); color: #fff; }
+.hero-base, .hero-lens { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero-base { filter: brightness(.45) saturate(.78); }
+.hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(19,16,22,.94), rgba(19,16,22,.58) 48%, rgba(19,16,22,.14)); }
+.hero-lens { clip-path: circle(0 at -100px -100px); filter: grayscale(1) invert(1) sepia(1) saturate(5) hue-rotate(130deg) brightness(.75) contrast(1.7); pointer-events: none; }
+.hero-grid { position: absolute; inset: 0; background-image: repeating-linear-gradient(0deg, rgba(72,227,208,.17) 0 1px, transparent 1px 28px), repeating-linear-gradient(90deg, rgba(72,227,208,.17) 0 1px, transparent 1px 28px); mix-blend-mode: screen; pointer-events: none; opacity: 0; }
+.hero-ring { position: absolute; top: 0; left: 0; width: 180px; height: 180px; margin: -90px 0 0 -90px; border: 1px solid rgba(72,227,208,.85); border-radius: 50%; box-shadow: 0 0 24px rgba(72,227,208,.35), inset 0 0 24px rgba(72,227,208,.15); opacity: 0; pointer-events: none; }
+.hero-content { position: relative; z-index: 2; width: min(1225px, calc(100% - 40px)); margin: 0 auto; padding: 112px 0 105px; }
+.hero .eyebrow { color: #eb526a; }
+.hero h1 { max-width: 720px; margin: 20px 0 18px; font: 700 clamp(48px, 6vw, 66px)/1 "Chakra Petch", sans-serif; letter-spacing: -2px; }
+.hero-copy { max-width: 590px; margin: 0 0 18px; color: #f0edf2; font-size: 19px; line-height: 1.65; }
+.hero-ko { color: #aaa2af; font-size: 14px; }
+.hero-actions { display: flex; gap: 14px; margin-top: 26px; }
+.button { display: inline-flex; min-height: 42px; align-items: center; justify-content: center; padding: 0 21px; border: 1px solid #8e8793; border-radius: 3px; color: #fff; font-weight: 700; }
+.button-primary { border-color: var(--accent); background: var(--accent); }
+.research-areas { padding: 70px 0; }
+.area-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 15px; margin-top: 26px; }
+.area-card { min-height: 156px; padding: 22px; border: 1px solid var(--line); border-radius: 7px; background: #fff; }
+.area-card h3 { margin: 0 0 13px; font: 700 16px/1.35 "Chakra Petch", sans-serif; }
+.area-card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+.latest { padding: 62px 0 64px; background: #f3f1f3; }
+.latest-head { display: flex; align-items: center; justify-content: space-between; }
+.latest-head a { color: var(--muted); font-size: 13px; }
+.news-preview-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 27px; }
+.news-preview { min-height: 143px; padding: 22px 24px; border-radius: 7px; background: #fff; }
+.news-preview time { color: var(--accent); font-size: 13px; }
+.news-preview h3 { margin: 12px 0 21px; font-size: 16px; font-weight: 500; }
+.news-preview p { display: -webkit-box; overflow: hidden; margin: 0; line-height: 1.55; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+
+/* Research and teaching */
+.feature-card, .research-card, .course-card { display: grid; grid-template-columns: 295px 1fr; gap: 30px; align-items: center; padding: 24px; }
+.feature-card { margin-bottom: 20px; }
+.feature-card img, .research-card img, .course-card img { width: 100%; max-height: 220px; object-fit: contain; }
+.research-lead { margin-bottom: 18px; }
+.research-list { display: grid; gap: 18px; }
+.research-card { min-height: 210px; }
+.media-frame { position: relative; overflow: hidden; width: 100%; aspect-ratio: 16 / 9; background: #111; }
+.media-frame iframe { width: 100%; height: 100%; border: 0; }
+.feature-card h2, .research-card h2, .course-card h2 { margin: 0 0 12px; font: 700 22px/1.28 "Chakra Petch", "Noto Sans KR", sans-serif; }
+.feature-card p, .research-card p, .course-card p, .course-card li { margin: 0; color: var(--text); font-size: 15px; line-height: 1.72; }
+.course-list { display: grid; gap: 18px; }
+.course-card { align-items: start; }
+.course-card ul { margin: 18px 0 0; padding: 0; list-style: none; color: var(--text); }
+.course-card li { margin: 2px 0; }
+.course-card li::before { content: "- "; }
+.course-copy strong { display: block; margin-top: 26px; }
+.sensing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: center; margin: 28px 0; }
+.sensing-grid img { width: 100%; max-height: 225px; object-fit: contain; }
+
+/* People */
+.faculty-card { display: grid; grid-template-columns: 200px 1fr; gap: 47px; padding: 30px 46px; }
+.faculty-card img { width: 188px; height: 260px; object-fit: cover; object-position: center top; }
+.faculty-label { margin: 0 0 8px; color: var(--accent); font: 600 13px/1.4 "Chakra Petch", sans-serif; letter-spacing: 2px; }
+.faculty-card h2 { margin: 0 0 14px; font: 700 27px/1.25 "Chakra Petch", "Noto Sans KR", sans-serif; }
+.career-title { margin: 0 0 20px; font: 500 15px/1.4 "Chakra Petch", sans-serif; }
+.faculty-card p { margin: 0; color: var(--text); font-size: 14px; line-height: 1.75; }
+.contact-line { display: flex; gap: 20px; margin-top: 8px !important; color: #c9c3cc !important; }
+.contact-line a:hover { color: var(--accent); }
+.people-section-title { margin: 21px 0 18px; color: var(--accent); font: 600 13px/1.4 "Chakra Petch", sans-serif; letter-spacing: 3px; }
+.people-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.people-grid[hidden] { display: none; }
+.person-card { min-height: 545px; padding: 18px; }
+.person-card img { width: 123px; height: 160px; margin: 0 auto 12px; object-fit: cover; object-position: center top; }
+.person-card h3 { margin: 0 0 11px; font: 700 15px/1.4 "Chakra Petch", "Noto Sans KR", sans-serif; }
+.person-card p { margin: 0 0 18px; color: var(--text); font-size: 13px; line-height: 1.48; overflow-wrap: anywhere; }
+.person-card .role { margin-bottom: 20px; color: #87808a; }
+.year-tabs { display: flex; overflow-x: auto; margin: -20px 0 24px; background: #fff; scrollbar-width: thin; }
+.year-tabs button { min-width: 50px; padding: 2px 14px 3px; border: 0; background: transparent; color: #36313a; font: 600 15px/1.1 "Chakra Petch", sans-serif; cursor: pointer; }
+.year-tabs button:hover, .year-tabs button:focus-visible { color: var(--accent); }
+.year-tabs button.is-active { background: var(--accent); color: #fff; }
+.undergrad-grid .person-card { min-height: 338px; }
+.alumni-group + .alumni-group { margin-top: 52px; }
+.alumni-group-title { margin: 0 0 18px; color: var(--accent); font: 600 13px/1.4 "Chakra Petch", sans-serif; letter-spacing: 3px; }
+.people-subpage .page-intro { padding-bottom: 46px; }
+
+/* Publications */
+.publication-section { margin-bottom: 55px; }
+.publication-section h2 { margin: 0 0 18px; padding-bottom: 15px; border-bottom: 2px solid var(--accent); color: var(--accent); font: 700 23px/1.3 "Chakra Petch", sans-serif; text-transform: uppercase; }
+.publication-section ul { margin: 0; padding-left: 18px; }
+.publication-section li { margin: 3px 0; color: #29252d; font-size: 13px; line-height: 1.42; }
+.publication-section a { color: #1682ae; text-decoration: underline; overflow-wrap: anywhere; }
+
+/* News */
+.news-list { max-width: 750px; margin: 0 auto; }
+.news-item { display: grid; grid-template-columns: 120px 1fr; gap: 22px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+.news-item time { font: 500 15px/1.45 "Chakra Petch", sans-serif; }
+.news-item h2 { margin: 0 0 22px; font-size: 15px; font-weight: 500; }
+.news-item p { margin: 0; white-space: pre-line; font-size: 14px; line-height: 1.62; }
+
+/* Contact */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.address-list { display: grid; gap: 22px; }
+.address-card { min-height: 248px; padding: 26px; }
+.address-card h2 { margin: 0 0 20px; font: 700 17px/1.35 "Chakra Petch", sans-serif; }
+.address-card p { margin: 0 0 56px; color: var(--text); font-size: 15px; line-height: 1.65; }
+.address-card p:last-child { margin-bottom: 0; }
+.map-frame { min-height: 518px; overflow: hidden; }
+.map-frame iframe { width: 100%; height: 100%; min-height: 518px; border: 0; }
+
+a:focus-visible, button:focus-visible { outline: 3px solid rgba(216,70,93,.45); outline-offset: 3px; }
+
+@media (max-width: 900px) {
+  .nav-toggle { display: block; }
+  .site-nav { position: absolute; top: 64px; right: 14px; left: 14px; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 8px; border: 1px solid #362f3a; border-radius: 7px; background: #1b171f; }
+  .site-nav.is-open { display: flex; }
+  .site-nav a { padding: 12px; }
+  .nav-dropdown { display: block; height: auto; }
+  .nav-dropdown-menu { position: static; width: auto; margin: 0 0 4px 12px; padding: 0; border: 0; background: transparent; box-shadow: none; opacity: 1; visibility: visible; transform: none; }
+  .nav-dropdown-menu a { padding: 8px 12px; color: #8e8793; font-size: 11px; }
+  .nav-dropdown-menu a:hover, .nav-dropdown-menu a:focus-visible, .nav-dropdown-menu a[aria-current="page"] { background: transparent; }
+  .brand-subtitle { display: none; }
+  .area-grid { grid-template-columns: repeat(2, 1fr); }
+  .feature-card, .research-card, .course-card { grid-template-columns: 230px 1fr; }
+  .people-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .container, .header-inner { width: min(100% - 28px, 1050px); }
+  .page-intro { padding: 44px 0 35px; }
+  .page-content { padding-bottom: 55px; }
+  .hero { min-height: 560px; }
+  .hero-content { width: min(100% - 32px, 1225px); padding: 92px 0 78px; }
+  .hero h1 { font-size: 45px; }
+  .hero-copy { font-size: 17px; }
+  .area-grid, .news-preview-grid, .people-grid, .contact-grid { grid-template-columns: 1fr; }
+  .sensing-grid { grid-template-columns: 1fr; }
+  .feature-card, .research-card, .course-card, .faculty-card { grid-template-columns: 1fr; gap: 20px; padding: 18px; }
+  .feature-card img, .research-card img, .course-card img { max-height: 260px; }
+  .faculty-card img { margin: 0 auto; }
+  .person-card { min-height: 0; }
+  .news-item { grid-template-columns: 1fr; gap: 8px; }
+  .footer-inner { flex-direction: column; }
+  .section-heading { margin-top: 35px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
