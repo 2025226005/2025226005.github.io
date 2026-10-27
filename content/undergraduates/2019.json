@@ -1,0 +1,19 @@
+{
+  "year": 2019,
+  "members": [
+    {
+      "name": "김주영  Jooyeong Kim",
+      "photo": "/uploads/people/undergraduate/2019-jooyeong-kim.avif",
+      "photo_alt": "Jooyeong Kim",
+      "role": "Undergraduate Researcher, SSL (2019–2021)",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2023\nEmail: zoo5945@daum.net"
+    },
+    {
+      "name": "차서연  Seoyeon Cha",
+      "photo": "/uploads/people/undergraduate/2019-seoyeon-cha.avif",
+      "photo_alt": "Seoyeon Cha",
+      "role": "Undergraduate Researcher, SSL (2021–2022)",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2023\nEmail: sarah5654@naver.com"
+    }
+  ]
+}

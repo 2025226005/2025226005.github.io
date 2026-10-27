@@ -1,0 +1,40 @@
+{
+  "year": 2024,
+  "members": [
+    {
+      "name": "유정훈  Junghoon Yu",
+      "photo": "/uploads/people/undergraduate/2024-junghoon-yu.avif",
+      "photo_alt": "Junghoon Yu",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2026"
+    },
+    {
+      "name": "박성빈  Seongbin Park",
+      "photo": "/uploads/people/undergraduate/2024-seongbin-park.avif",
+      "photo_alt": "Seongbin Park",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2026"
+    },
+    {
+      "name": "문혁재  Hyukjae Moon",
+      "photo": "/uploads/people/undergraduate/2024-hyukjae-moon.avif",
+      "photo_alt": "Hyukjae Moon",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2026"
+    },
+    {
+      "name": "최순혁  Sunhyuck Choi",
+      "photo": "/uploads/people/undergraduate/2024-sunhyuck-choi.avif",
+      "photo_alt": "Sunhyuck Choi",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2025"
+    },
+    {
+      "name": "이주영  JuYeong Lee",
+      "photo": "/uploads/people/undergraduate/2024-juyeong-lee.avif",
+      "photo_alt": "JuYeong Lee",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2026\nEmail: devid602@gmail.com"
+    }
+  ]
+}

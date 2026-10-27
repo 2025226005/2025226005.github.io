@@ -1,0 +1,40 @@
+{
+  "year": 2025,
+  "members": [
+    {
+      "name": "장태희  TaeHee Jang",
+      "photo": "/uploads/people/undergraduate/2025-taehee-jang.avif",
+      "photo_alt": "TaeHee Jang",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Interdisciplinary Studies, Chungbuk National University, expected in 2028"
+    },
+    {
+      "name": "이승호  Seungho Lee",
+      "photo": "/uploads/people/undergraduate/2025-seungho-lee.avif",
+      "photo_alt": "Seungho Lee",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2031"
+    },
+    {
+      "name": "윤시원  Siwon Yoon",
+      "photo": "/uploads/people/undergraduate/2025-siwon-yoon.avif",
+      "photo_alt": "Siwon Yoon",
+      "role": "Undergraduate Researcher",
+      "details": "Interdisciplinary Studies, Chungbuk National University, expected in 2029"
+    },
+    {
+      "name": "한연서  Yeonseo Han",
+      "photo": "/uploads/people/undergraduate/2025-yeonseo-han.avif",
+      "photo_alt": "Yeonseo Han",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2029"
+    },
+    {
+      "name": "김소연  Soyeon Kim",
+      "photo": "/uploads/people/undergraduate/2025-soyeon-kim.avif",
+      "photo_alt": "Soyeon Kim",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2029"
+    }
+  ]
+}

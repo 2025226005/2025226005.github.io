@@ -1,0 +1,19 @@
+{
+  "year": 2026,
+  "members": [
+    {
+      "name": "김태현  Taehyun Kim",
+      "photo": "/uploads/people/undergraduate/2026-taehyun-kim.avif",
+      "photo_alt": "Taehyun Kim",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Interdisciplinary Studies, Chungbuk National University, expected in 2028"
+    },
+    {
+      "name": "김찬우  Chanwoo Kim",
+      "photo": "/uploads/people/undergraduate/2026-chanwoo-kim.avif",
+      "photo_alt": "Chanwoo Kim",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2028"
+    }
+  ]
+}

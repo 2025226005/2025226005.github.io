@@ -1,0 +1,33 @@
+{
+  "year": 2023,
+  "members": [
+    {
+      "name": "김태헌  Taeheon Kim",
+      "photo": "/uploads/people/undergraduate/2023-taeheon-kim.avif",
+      "photo_alt": "Taeheon Kim",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2025\nEmail: taeheon137@naver.com"
+    },
+    {
+      "name": "박영서  Youngseo Park",
+      "photo": "/uploads/people/undergraduate/2023-youngseo-park.avif",
+      "photo_alt": "Youngseo Park",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2025\nEmail: 1023syp@chungbuk.ac.kr"
+    },
+    {
+      "name": "박주영  Jooyoung Park",
+      "photo": "/uploads/people/undergraduate/2023-jooyoung-park.avif",
+      "photo_alt": "Jooyoung Park",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2025\nEmail: jully4436@naver.com"
+    },
+    {
+      "name": "신창혁  Changhyeok Shin",
+      "photo": "/uploads/people/undergraduate/2023-changhyeok-shin.avif",
+      "photo_alt": "Changhyeok Shin",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2025\nEmail: tlsckdgur@gmail.com"
+    }
+  ]
+}

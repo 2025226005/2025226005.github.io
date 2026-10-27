@@ -1,0 +1,54 @@
+{
+  "year": 2021,
+  "members": [
+    {
+      "name": "공혜원  Hyewon Kong",
+      "photo": "/uploads/people/undergraduate/2021-hyewon-kong.avif",
+      "photo_alt": "Hyewon Kong",
+      "role": "Undergraduate Researcher, SSL (2021–2022)",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2025\nEmail: rhdgpdnjs1@naver.com"
+    },
+    {
+      "name": "김규호  Gyuho Kim",
+      "photo": "/uploads/people/undergraduate/2021-gyuho-kim.avif",
+      "photo_alt": "Gyuho Kim",
+      "role": "Undergraduate Researcher, SSL (2021–2022)",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2023\nEmail: hoya5118@naver.com"
+    },
+    {
+      "name": "김희진  Heejin Kim",
+      "photo": "/uploads/people/undergraduate/2021-heejin-kim.avif",
+      "photo_alt": "Heejin Kim",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2025\nEmail: kimheejin1002@naver.com"
+    },
+    {
+      "name": "이동현  Donghyeon Lee",
+      "photo": "/uploads/people/undergraduate/2021-donghyeon-lee.avif",
+      "photo_alt": "Donghyeon Lee",
+      "role": "Research Internship",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2025\nEmail: dlehd0213@gmail.com"
+    },
+    {
+      "name": "한아름  Areum Han",
+      "photo": "/uploads/people/undergraduate/2021-areum-han.avif",
+      "photo_alt": "Areum Han",
+      "role": "Undergraduate Researcher, SSL (2021–2022)",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2025\nEmail: areum020508@naver.com"
+    },
+    {
+      "name": "조문원  Munwon Cho",
+      "photo": "/uploads/people/undergraduate/2021-munwon-cho.avif",
+      "photo_alt": "Munwon Cho",
+      "role": "Researcher, HydroSEM",
+      "details": "Undergraduate Researcher, SSL (2019–2021)\nB.S. Civil Engineering, Chungbuk National University, 2021\nEmail: ert8199@naver.com"
+    },
+    {
+      "name": "임유리  Yuri Lim",
+      "photo": "/uploads/people/undergraduate/2021-yuri-lim.avif",
+      "photo_alt": "Yuri Lim",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2025\nEmail: limyuri0625@naver.com"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "year": 2022,
+  "members": [
+    {
+      "name": "이상록  SangRok Lee",
+      "photo": "/uploads/people/undergraduate/2022-sangrok-lee.avif",
+      "photo_alt": "SangRok Lee",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2024\nEmail: dhrtkstkdfhr@daum.net"
+    },
+    {
+      "name": "이영진  Youngjin Lee",
+      "photo": "/uploads/people/undergraduate/2022-youngjin-lee.avif",
+      "photo_alt": "Youngjin Lee",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2026\nEmail: yjlee8381@naver.com"
+    },
+    {
+      "name": "임유리  Yuri Lim",
+      "photo": "/uploads/people/undergraduate/2022-yuri-lim.avif",
+      "photo_alt": "Yuri Lim",
+      "role": "Undergraduate Researcher",
+      "details": "B.S. Civil Engineering, Chungbuk National University, expected in 2025\nEmail: limyuri0625@naver.com"
+    }
+  ]
+}
