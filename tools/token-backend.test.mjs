@@ -58,11 +58,11 @@ test('sign-in reuses GitHub entry/media writes and omits token from stored user'
 });
 test('invalid/denied tokens cannot restore a session and failures clear credentials', async () => {
   const { backend } = fixture();
-  await assert.rejects(backend.authenticate({ token: 'not-a-fine-grained-token' }), /Fine-grained/);
+  await assert.rejects(backend.authenticate({ token: 'not-a-fine-grained-token' }), /fine-grained/i);
   await assert.rejects(backend.authenticate({ token: 'github_pat_DENIED' }), error => !error.message.includes('upstream') && !error.message.includes('github_pat_'));
   assert.equal(backend.api, null);
   assert.equal(backend.token, null);
-  await assert.rejects(backend.restoreUser({ login: 'test-owner' }), /다시 입력/);
+  await assert.rejects(backend.restoreUser({ login: 'test-owner' }), /again/);
 });
 test('login form masks and clears token before submitting without browser storage', () => {
   const { page } = fixture();

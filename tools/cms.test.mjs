@@ -115,8 +115,28 @@ test('content reader sorts years, supports empty lists and rejects duplicate yea
   await write('undergraduates/2027.json', { year: 2027 });
   await write('undergraduates/2026.json', { year: 2026, members: null });
   assert.deepEqual((await readContent(dir)).years.map(y => [y.year,y.members]), [[2027,[]],[2026,[]]]);
+  await write('news/old.json', { title: 'Old', date_label: '2025', order: 1, body: 'Old full article' });
+  await write('news/new.json', { title: 'New', date_label: '2026', order: -123456789, body: 'New full article' });
+  await write('order.json', { version: 1, lists: { undergraduates: ['content/undergraduates/2026.json','content/undergraduates/2027.json'], news: ['content/news/old.json','content/news/new.json'] } });
+  const reordered = await readContent(dir);
+  assert.deepEqual(reordered.years.map(y => y.year), [2026,2027]);
+  assert.deepEqual(reordered.news.map(n => n.title), ['Old','New']);
+  const home = asDocument(await renderPage('index.html', root, reordered));
+  const news = asDocument(await renderPage('news.html', root, reordered));
+  assert.equal(home.querySelector('.news-preview h3').textContent, 'Old');
+  assert.equal(news.querySelector('.news-item h2').textContent, 'Old');
+  const yearPage = asDocument(await renderPage('people_undergraduate.html', root, reordered));
+  assert.equal(yearPage.querySelector('[data-year-panel]:not([hidden])').dataset.yearPanel, '2026');
   await write('undergraduates/duplicate.json', { year: 2027, members: [] });
   await assert.rejects(readContent(dir), /Duplicate year/);
+});
+
+test('collection grouping conforms to the CMS nonempty-list requirement', () => {
+  const config = createConfig({ repo: '2025226005/2025226005.github.io', branch: 'main' });
+  for (const collection of config.collections) {
+    assert.ok(collection.view_groups === undefined || collection.view_groups.length >= 1,
+      `${collection.name}: view_groups must be omitted or have at least one item`);
+  }
 });
 
 test('admin fields and deployment use the content repository and generated artifact', async () => {

@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <meta name="referrer" content="no-referrer">
-  <title>SSAIL · 콘텐츠 관리</title>
+  <title>SSAIL · Website administration</title>
+  <link rel="stylesheet" href="./order.css?v=ordering-1">
   <style>
     body { margin: 0; background: #faf9fb; color: #24212a; font: 16px/1.7 system-ui, sans-serif; }
     #status, .ssail-login { max-width: 680px; margin: 10vh auto; padding: 32px; }
@@ -28,17 +29,17 @@
     .ssail-login a { color: #a51c37; text-decoration: underline; }
     @media(max-width: 720px) { #status, .ssail-login { margin: 24px 12px; padding: 24px; } }
   </style>
-  <script type="module" src="./bootstrap.js"></script>
+  <script type="module" src="./bootstrap.js?v=ordering-1"></script>
 </head>
 <body>
   <main id="status" role="status" aria-live="polite">
     <div class="brand">SSAIL ADMIN</div>
-    <h1 id="status-title">SSAIL 관리자 페이지</h1>
-    <p id="status-message">게시된 홈페이지에서 GitHub 관리 키로 접속합니다. 로컬 파일(file://)에서는 로그인할 수 없습니다.</p>
-    <p class="note">학부 연구생의 연도·명단·사진, 현재 구성원, 졸업생, 논문, 뉴스를 관리합니다.
-      홈페이지 저장소에 쓰기 권한을 부여한 GitHub 관리 키가 필요합니다.</p>
-    <p><a href="../index.html">홈페이지로 돌아가기</a> · <a href="./guide.html">설정 및 사용 안내</a></p>
+    <h1 id="status-title">Website administration</h1>
+    <p id="status-message">Open the published HTTPS website to sign in with your GitHub access token. Local file:// pages cannot sign in.</p>
+    <p class="note">Manage members, undergraduate years, alumni, publications and news.
+      Your GitHub access token must have write access to the website repository.</p>
+    <p><a href="../index.html">Back to website</a> · <a href="./guide.html">Editor guide</a></p>
   </main>
-  <noscript>관리자 페이지를 사용하려면 JavaScript를 허용해 주세요.</noscript>
+  <noscript>Enable JavaScript to use the editor.</noscript>
 </body>
 </html>

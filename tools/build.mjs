@@ -4,6 +4,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parseHTML } from 'linkedom';
 import { marked } from 'marked';
 import sanitize from 'sanitize-html';
+import { emptyOrder, orderedRecords, validateOrder } from '../admin/order-model.js';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const categories = { journal: 'JOURNAL PUBLICATIONS', conference: 'Conference Publications & Abstracts', poster: 'Posters' };
@@ -46,14 +47,16 @@ export function citationHtml(value) {
 async function json(file) { return JSON.parse(await fs.readFile(file, 'utf8')); }
 async function records(source, directory) {
   const files = (await fs.readdir(path.join(source, 'content', directory))).filter(name => name.endsWith('.json')).sort();
-  return Promise.all(files.map(async file => ({ ...await json(path.join(source, 'content', directory, file)), _file: file })));
+  return Promise.all(files.map(async file => ({ ...await json(path.join(source, 'content', directory, file)), _file: file, path: `content/${directory}/${file}` })));
 }
-const byOrder = (a, b) => (a.order ?? 0) - (b.order ?? 0) || a._file.localeCompare(b._file);
 export async function readContent(source = root) {
   const [years, current, alumni, publications, news] = await Promise.all([
     records(source, 'undergraduates'), json(path.join(source, 'content/current.json')),
     records(source, 'alumni'), records(source, 'publications'), records(source, 'news')
   ]);
+  let index;
+  try { index = validateOrder(await json(path.join(source, 'content/order.json'))); }
+  catch (error) { if (error.code !== 'ENOENT') throw error; index = emptyOrder(); }
   const seen = new Set();
   years.forEach(y => { integer(y.year, 'undergraduate year', 1900, 2200); if (seen.has(y.year)) throw new Error('Duplicate year: ' + y.year); seen.add(y.year); });
   if (!years.length) throw new Error('At least one undergraduate year is required.');
@@ -62,10 +65,15 @@ export async function readContent(source = root) {
     if (group.members == null) group.members = [];
     if (!Array.isArray(group.members)) throw new Error('Invalid member list');
   }
-  for (const item of [...alumni, ...publications, ...news]) integer(item.order ?? 0, 'display order');
+  // Legacy numeric order remains readable during rollout and rollback. It is no
+  // longer editable; explicit ordered paths are now the source of display order.
+  for (const item of [...alumni, ...publications, ...news]) integer(item.order ?? 0, 'legacy display order', Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
   publications.forEach(p => { if (!categories[p.category]) throw new Error('Unknown publication category'); integer(p.year, 'publication year', 1900, 2200); required(p.title, 'publication title'); });
   news.forEach(n => { required(n.title, 'news title'); required(n.date_label, 'news date'); required(n.body, 'news body'); if (n.link) safeUrl(n.link); });
-  return { years: years.sort((a,b) => b.year - a.year), current, alumni: alumni.sort(byOrder), publications: publications.sort(byOrder), news: news.sort(byOrder) };
+  return { years: orderedRecords(years, index.lists.undergraduates, 'undergraduates'), current,
+    alumni: orderedRecords(alumni, index.lists.alumni, 'alumni'),
+    publications: orderedRecords(publications, index.lists.publications, 'publications'),
+    news: orderedRecords(news, index.lists.news, 'news') };
 }
 export async function renderPage(file, source, data) {
   const original = await fs.readFile(path.join(source, file), 'utf8');
